@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    --primary-white: hsl(0, 0%,100%);
+    --primary-blue: hsl(223, 87%, 63%);
+    --primary-blue-hover: hsl(223, 87%, 63%, .8);
+    --secondary-paleBlue: hsl(223, 100%, 88%);
+    --secondary-lightRed: hsl(354, 100%, 66%);
+    --neutral-gray: hsl(0, 0%, 59%);
+    --neutral-veryDarkBlue: hsl(209, 33%, 12%);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    /* background: url(images/desktop-hover-error-states.jpg) no-repeat top; */
+    /* background: url(images/mobile-design.jpg) no-repeat top; */
+    /* background: url(images/desktop-design.jpg) no-repeat top center; */
+}
+
+ body {
+     margin: 0;
+     font-family: 'Libre Franklin';
+ }
+
+ .header-container {
+     
+     text-align: center;
+     margin-top: 85px;
+ }
+ 
+ .logo {
+     width: 54px;
+ }
+
+ .header-h1 {
+     margin-top: 34px;
+     font-weight: 300;
+     font-size: 22px;
+     color: var(--neutral-gray);
+ }
+.header-h1-span {
+    font-weight: 600;
+    color: var(--neutral-veryDarkBlue);
+}
+
+.header-h2 {
+    font-size: 12px;
+    font-weight:300;
+    letter-spacing: -.2px;
+    margin-bottom: 24px;
+    color: var(--neutral-veryDarkBlue);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email, .btn-primary {
+    margin-top: 8px;
+    margin-left: 1px;
+    width: 281px;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 30px;
+    letter-spacing: -.4px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    margin-bottom: 2px;
+}
+.email {
+    border: 1px solid var(--secondary-paleBlue);
+    color: var(--neutral-veryDarkBlue);
+}
+.email::placeholder {
+    color: var(--secondary-paleBlue);
+}
+.email:focus-visible {
+    outline: 1.5px solid var(--secondary-paleBlue);
+}
+
+.btn-primary {
+    background: var(--primary-blue);
+    color: hsl(0, 0%, 100%);
+    padding-left: 5px;
+    border: none;
+    box-shadow: 0 10px 30px 0 hsl(209, 33%, 12%, .3);
+    cursor: pointer;
+}
+.btn-primary:hover {
+
+    background: var(--primary-blue-hover);
+    /* border: 1px solid var(--primary-blue); */
+    transition: all .5s;
+    -webkit-transition: ease .3s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+}
+.chart-img {
+    margin-top: 67px;
+    width: 319px;
+
+    margin-bottom: 90px;
+}
+
+.social-container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    color: var(--primary-blue);
+   
+}
+
+.social-icons {
+    border: 1px solid var(--secondary-paleBlue);
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+    margin-top: -3px;
+    border-radius:40px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -ms-border-radius:40px;
+    -o-border-radius:40px;
+    cursor: pointer;
+}
+.social-icons:hover {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+}
+.fa-brands {
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.fa-facebook-f {
+    margin-left: 10px;
+}
+.fa-instagram {
+    margin-left: 7.3px;
+}
+
+.copy-right {
+    font-size: 10px;
+    margin-top:21px;
+    color: var(--neutral-gray);
+
+}
+
+.error {
+    margin-top: 5px;
+    font-size: 10.4px;
+    color: var(--secondary-lightRed);
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.border-error {
+    outline:  1.5px solid var(--secondary-lightRed);
+}
+
+.border-error:focus-visible {
+    outline:  1.5px solid var(--secondary-lightRed);
+}
+
+.hidden {
+    display: none;
+}
+
+.emailPh::placeholder {
+    color: var(--neutral-veryDarkBlue);
+}
+
+@media screen and (min-width: 1127px) {
+    .logo {
+        margin-top: 1px;
+        width: 85px;
+    }
+    .header-h1 {
+        margin-top: 44px;
+        font-size: 48px;
+    }
+    .header-h2 {
+        margin-top: -22px;
+        font-size: 20.5px;
+        font-weight: 300;
+    }
+
+    .form {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .email, .btn-primary {
+        margin-top: 15px;
+        width: 420px;
+        height: 56px;
+        font-size: 19px;
+    
+    }
+    .btn-primary {
+        margin-left: 16px;
+        width: 200px;
+     
+    }
+    .chart-img {
+        margin-top: 84px;
+        width: 640px;
+    }
+
+    .social-container {
+        margin-top: -15.5px;
+    }
+    .copy-right {
+        margin-top: 19px;
+        font-size: 12px;
+    }
+
+    .error {
+        font-size: 12.5px;
+        margin-top: 5px;
+    }
+}
